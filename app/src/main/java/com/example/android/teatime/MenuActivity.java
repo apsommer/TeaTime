@@ -43,6 +43,7 @@ public class MenuActivity extends AppCompatActivity implements ImageDownloader.D
 
     // TODO (2) Add a SimpleIdlingResource variable that will be null in production
     @Nullable
+
     private SimpleIdlingResource mIdlingResource;
 
     /**
@@ -78,6 +79,7 @@ public class MenuActivity extends AppCompatActivity implements ImageDownloader.D
          * done too early.
          */
 
+        // sets the member variable
         getIdlingResource();
 
     }
@@ -104,7 +106,7 @@ public class MenuActivity extends AppCompatActivity implements ImageDownloader.D
     public void onDone(ArrayList<Tea> teas) {
 
         // Create a {@link TeaAdapter}, whose data source is a list of {@link Tea}s.
-        // The adapter know how to create grid items for each item in the list.
+        // The adapter knows how to create grid items for each item in the list.
         GridView gridview = (GridView) findViewById(R.id.tea_grid_view);
         TeaMenuAdapter adapter = new TeaMenuAdapter(this, R.layout.grid_item_layout, teas);
         gridview.setAdapter(adapter);

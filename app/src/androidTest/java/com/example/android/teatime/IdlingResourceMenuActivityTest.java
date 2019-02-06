@@ -65,8 +65,7 @@ public class IdlingResourceMenuActivityTest {
 
     private IdlingResource mIdlingResource;
 
-
-    // TODO (6) Registers any resource that needs to be synchronized with Espresso before
+    // TODO (6) Register any resource that needs to be synchronized with Espresso before
     // the test is run.
 
     @Before
